@@ -46,5 +46,6 @@ public class Main {
                 System.out.println("선택한 상품: " + selectedItem.getName());
             }
         }
+        // Lv.3, 4, 5 구현
     }
 }
