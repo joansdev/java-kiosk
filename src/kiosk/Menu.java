@@ -6,8 +6,8 @@ import java.util.List;
 public class Menu {
 
     // 속성
-    private String name;
-    private List<MenuItem> items = new ArrayList<>();
+    private String name; // 메뉴 이름
+    private List<MenuItem> items = new ArrayList<>(); // 품목 리스트
 
 
     // 생성자
@@ -16,7 +16,6 @@ public class Menu {
     }
 
     // 기능
-
     public void addItem(MenuItem item) {
         items.add(item);
     }

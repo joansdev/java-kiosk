@@ -20,7 +20,16 @@ public class Kiosk {
     }
 
     //기능
-    // 프로그램 실행
+    // 메인메뉴 출력
+    public void showMainMenu() {
+        System.out.println("[ SHAKESHAKE MENU ]");
+        for (int i = 0; i < menus.size(); i++) {
+            System.out.println((i + 1) + ". " + menus.get(i).getName());
+        }
+        System.out.println("0. 종료");
+    }
+
+    // 프로그램 반복 실행 (0 입력시까지)
     public void run() {
         while (true){
             showMainMenu();
@@ -54,15 +63,6 @@ public class Kiosk {
                 System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
             }
         }
-    }
-
-    // 메인메뉴 출력
-    public void showMainMenu() {
-        System.out.println("[ SHAKESHAKE MENU ]");
-        for (int i = 0; i < menus.size(); i++) {
-            System.out.println((i + 1) + ". " + menus.get(i).getName());
-        }
-        System.out.println("0. 종료");
     }
 
     // 입력 처리
